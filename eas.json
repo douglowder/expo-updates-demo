@@ -1,21 +1,23 @@
 {
-    "build": {
-      "development": {
-        "developmentClient": true,
-        "distribution": "internal",
-        "prebuildCommand": "prebuild --yarn"
-
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "prebuildCommand": "prebuild --yarn",
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "withoutCredentials": true
       },
-      "preview": {
-        "distribution": "internal",
-        "android": {
-          "withoutCredentials": true
-        },
-        "ios": {
-          "simulator": true
-        }
+      "ios": {
+        "simulator": true
       },
-      "production": {}
+      "channel": "preview"
+    },
+    "production": {
+      "channel": "production"
     }
   }
-  
+}

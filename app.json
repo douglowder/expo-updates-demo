@@ -33,6 +33,12 @@
         "projectId": "f84cf703-a965-4e81-a765-04e55f8dfe18"
       }
     },
-    "owner": "douglowderexpo"
+    "owner": "douglowderexpo",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f84cf703-a965-4e81-a765-04e55f8dfe18"
+    }
   }
 }
